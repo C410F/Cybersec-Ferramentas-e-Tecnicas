@@ -16,7 +16,9 @@ Possíveis fases:
 - Exfiltração
 - Comando e controle
 
-## 4. Oportunidades de Detecção
+## 4. Uso da Ferramenta
+
+## 5. Oportunidades de Detecção
 
 Descrever lógica de detecção.
 
@@ -27,7 +29,7 @@ Possíveis abordagens:
 - Monitoramento de processos anômalos
 - Análise de padrões de comunicação
 
-## 5. Mitigações e Controles
+## 6. Mitigações e Controles
 
 Controles que podem reduzir risco ou impacto.
 
@@ -38,7 +40,7 @@ Exemplos:
 - Proteções nativas do sistema
 - Hardening de endpoints
 
-## 6. Referências
+## 7. Referências
 
 Exemplos:
 
