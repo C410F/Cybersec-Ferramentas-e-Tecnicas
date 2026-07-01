@@ -5,12 +5,14 @@ O Slowloris é uma ferramenta conhecida por explorar uma característica do prot
 
 Do ponto de vista defensivo, compreender seu funcionamento é importante para identificar indicadores de comprometimento da disponibilidade, validar configurações de servidores web e implementar mecanismos de mitigação adequados. Neste laboratório, foi realizado um ambiente controlado para observar seus efeitos sobre um servidor HTTP simples em Python.
 
+
 ## 2. Visão Geral da Ferramenta
 O Slowloris foi desenvolvido para demonstrar uma técnica de negação de serviço baseada em conexões HTTP incompletas. Seu funcionamento consiste em estabelecer diversas conexões TCP com o servidor e enviar cabeçalhos HTTP de maneira extremamente lenta, mantendo cada conexão ativa pelo maior tempo possível.
 
 Enquanto o servidor aguarda a conclusão da requisição, recursos internos permanecem alocados para cada conexão aberta. Quando o número de conexões cresce além da capacidade de atendimento do servidor, novos clientes podem sofrer degradação de desempenho ou indisponibilidade.
 
 Uma das principais características dessa técnica é que ela gera pouco tráfego de rede quando comparada a ataques de negação de serviço tradicionais, dificultando sua identificação apenas por volume de pacotes.
+
 
 ## 3. Uso da Ferramenta
 Para os testes realizados neste laboratório, foi utilizado uma máquina cliente rodando Kali Linux e um servidor local python rodando no Fedora Server. Para fins de monitoramento do impacto, foi utilizada a ferramenta Btop. 
@@ -27,12 +29,14 @@ Na imagem a seguir, é possível observar que a ferramenta consumiu 150 threads 
   <em><strong>Figura 1.</strong>Impacto da ferramenta, explícito no número de threads consumidas pelo processo do servidor python</em>
 </p>
 
+
 ## 4. Papel na Cadeia de Ataque
 O Slowloris normalmente aparece durante a fase de Impacto da cadeia de ataque, quando o objetivo é comprometer a disponibilidade de um serviço.
 
 Embora o MITRE ATT&CK trate ataques de negação de serviço de forma limitada, essa técnica está alinhada ao objetivo de impedir ou degradar a disponibilidade de aplicações expostas.
 
 Sua utilização normalmente ocorre após o reconhecimento da infraestrutura do alvo, quando o atacante identifica um serviço HTTP suscetível ao gerenciamento inadequado de conexões persistentes.
+
 
 ## 5. Oportunidades de Detecção
 A detecção desse comportamento deve ser baseada principalmente na análise do padrão das conexões, e não apenas no volume de tráfego.
@@ -44,6 +48,7 @@ Alguns indicadores incluem:
 - Aumento contínuo do número de sessões TCP estabelecidas;
 - Crescimento anormal da quantidade de threads ou workers responsáveis pelo atendimento das requisições;
 - Aumento no tempo de resposta para clientes legítimos.
+  
 
 ## 6. Mitigações e Controles
 
@@ -68,6 +73,7 @@ Também é recomendável que ambientes críticos possuam monitoramento em tempo 
 - Tempo médio de resposta das aplicações;
 - Taxa de criação de novas conexões;
 - Disponibilidade do serviço.
+  
 
 ## 7. Referências
 
