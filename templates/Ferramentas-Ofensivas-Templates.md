@@ -1,6 +1,6 @@
 # Análise de Ferramenta Ofensiva: <NOME DA FERRAMENTA>
 
-## 1. Resumo Executivo
+## 1. Resumo
 Breve descrição da ferramenta e por que ela é relevante do ponto de vista defensivo.
 
 ## 2. Visão Geral da Ferramenta
