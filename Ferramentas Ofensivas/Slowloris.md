@@ -17,7 +17,7 @@ Para os testes realizados neste laboratório, foi utilizado uma máquina cliente
 
 Foi observado que o impacto ocorreu principalmente no gerenciamento das conexões simultâneas do servidor, e não no consumo elevado de CPU ou memória. 
 
-Nas imagens a seguir, é possível observar que a ferramenta consumiu 150 threads do servidor, o que pode ser ampliado a partir de infraestruturas destinadas para ataques de DDoS, exaurindo servidores vulneráveis
+Na imagem a seguir, é possível observar que a ferramenta consumiu 150 threads do servidor, o que pode ser ampliado a partir de infraestruturas destinadas para ataques de DDoS, exaurindo servidores vulneráveis
 
 <p align="center">
   <img src="Screenshots/Fedora ataque.png" width="800">
