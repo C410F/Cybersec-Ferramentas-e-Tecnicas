@@ -112,5 +112,5 @@ A documentação oficial descreve os perfis como uma forma de definir conjuntos 
 
 ## 6. Referências
 - [Documentação oficial do Firejail](https://firejail.wordpress.com/)
-- [Github do Firejail](https://github.com/netblue30/firejail/tree/master)
+- [Github do Firejail](https://github.com/netblue30/firejail/tree/master) 
 
