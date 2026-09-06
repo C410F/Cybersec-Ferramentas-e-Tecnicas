@@ -80,7 +80,7 @@ firejail --net=none bash
 Esse tipo de configuração pode ser interessante para processos que não precisam de acesso à rede.
 
 <p align="center">
-  <img src="Screenshots/firejail_teste_rede" width="800">
+  <img src="Screenshots/firejail_teste_rede.png" width="800">
 </p>
 
 <p align="center">
