@@ -55,6 +55,7 @@ O Firejail cria um ambiente restrito para o shell e seus processos descendentes.
   <em><strong>Figura 1.</strong>Teste de console isolado, evidenciado pelo arquivo criado, que não existe fora da sandbox</em>
 </p>
 
+
 Para visualizar os sandboxes ativos:
 
 firejail --list
@@ -71,6 +72,7 @@ firejail --tree
   <em><strong>Figura 1.</strong>Monitoramento de sandbox ativos e seus respectivos processos</em>
 </p>
 
+
 Esses comandos também são úteis durante uma investigação ou validação do ambiente.
 
 O Firejail também permite criar um ambiente sem acesso à rede através de:
@@ -86,6 +88,7 @@ Esse tipo de configuração pode ser interessante para processos que não precis
 <p align="center">
   <em><strong>Figura 1.</strong>Teste de rede em console isolado</em>
 </p>
+
 
 O Firejail utiliza arquivos de perfil para definir configurações específicas de segurança para aplicações.
 
