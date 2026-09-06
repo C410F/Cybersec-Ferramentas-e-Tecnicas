@@ -47,6 +47,7 @@ firejail bash
 
 O Firejail cria um ambiente restrito para o shell e seus processos descendentes.
 
+
 <p align="center">
   <img src="Screenshots/firejail_teste.png" width="800">
 </p>
@@ -64,6 +65,7 @@ Para visualizar a árvore de processos:
 
 firejail --tree
 
+
 <p align="center">
   <img src="Screenshots/firejail_monitoramento.png" width="800">
 </p>
@@ -80,6 +82,7 @@ O Firejail também permite criar um ambiente sem acesso à rede através de:
 firejail --net=none bash
 
 Esse tipo de configuração pode ser interessante para processos que não precisam de acesso à rede.
+
 
 <p align="center">
   <img src="Screenshots/firejail_teste_rede.png" width="800">
