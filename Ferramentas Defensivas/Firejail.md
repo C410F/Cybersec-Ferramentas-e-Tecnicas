@@ -47,6 +47,14 @@ firejail bash
 
 O Firejail cria um ambiente restrito para o shell e seus processos descendentes.
 
+<p align="center">
+  <img src="Screenshots/firejail_teste.png" width="800">
+</p>
+
+<p align="center">
+  <em><strong>Figura 1.</strong>Teste de console isolado, evidenciado pelo arquivo criado, que não existe fora da sandbox</em>
+</p>
+
 Para visualizar os sandboxes ativos:
 
 firejail --list
@@ -54,6 +62,14 @@ firejail --list
 Para visualizar a árvore de processos:
 
 firejail --tree
+
+<p align="center">
+  <img src="Screenshots/firejail_monitoramento.png" width="800">
+</p>
+
+<p align="center">
+  <em><strong>Figura 1.</strong>Monitoramento de sandbox ativos e seus respectivos processos</em>
+</p>
 
 Esses comandos também são úteis durante uma investigação ou validação do ambiente.
 
@@ -63,7 +79,13 @@ firejail --net=none bash
 
 Esse tipo de configuração pode ser interessante para processos que não precisam de acesso à rede.
 
-5.4 Perfis de segurança
+<p align="center">
+  <img src="Screenshots/firejail_teste_rede" width="800">
+</p>
+
+<p align="center">
+  <em><strong>Figura 1.</strong>Teste de rede em console isolado</em>
+</p>
 
 O Firejail utiliza arquivos de perfil para definir configurações específicas de segurança para aplicações.
 
@@ -89,4 +111,6 @@ Device restrictions.
 A documentação oficial descreve os perfis como uma forma de definir conjuntos de permissões específicos para determinadas aplicações.
 
 ## 6. Referências
+- [Documentação oficial do Firejail](https://firejail.wordpress.com/)
+- [Github do Firejail](https://github.com/netblue30/firejail/tree/master)
 
