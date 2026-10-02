@@ -17,12 +17,12 @@ A ferramenta consulta diferentes fontes de informações de DNS e infraestrutura
 
 Entre as fontes utilizadas pelo projeto estão serviços como:
 
-SecurityTrails
-CrimeFlare
-CertSpotter
-DNSDumpster
-IPinfo
-ViewDNS
+- SecurityTrails
+- CrimeFlare
+- CertSpotter
+- DNSDumpster
+- IPinfo
+- ViewDNS
 
 Após obter possíveis endereços, a ferramenta pode verificar se esses servidores ainda respondem e comparar o conteúdo retornado com o domínio analisado.
 
@@ -89,25 +89,25 @@ O histórico pode permanecer disponível em serviços de terceiros.
 
 Manter um inventário atualizado de:
 
-Domínios;
-Subdomínios;
-Endereços IP;
-Servidores;
-Serviços expostos;
-CDNs;
-WAFs;
-Ambientes antigos.
+- Domínios;
+- Subdomínios;
+- Endereços IP;
+- Servidores;
+- Serviços expostos;
+- CDNs;
+- WAFs;
+- Ambientes antigos.
 
 Isso facilita identificar ativos esquecidos ou que deveriam ter sido retirados da Internet.
 
 Uma organização pode executar avaliações autorizadas de sua própria superfície externa para verificar:
 
-IPs históricos;
-DNS atual;
-subdomínios;
-serviços expostos;
-servidores de origem;
-configurações de firewall.
+- IPs históricos;
+- DNS atual;
+- Subdomínios;
+- Serviços expostos;
+- Servidores de origem;
+- Configurações de firewall.
 
 Essa abordagem transforma uma técnica de reconhecimento ofensivo em uma atividade de validação defensiva de exposição.
 
